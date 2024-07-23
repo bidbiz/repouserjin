@@ -84,7 +84,7 @@ async def ss_gen(message: Message):
     await message.edit("`Uploading image to ImgBB ...`")
     file_name = glob("*_preview.png")[0]
     with message.cancel_callback():
-        params = {'key': '09fa3aa9bb2d2580398572e1f450ff53'}
+        params = {'key': 'f8938feeaf28e74432880aee8b2c254a'}
         url = 'https://api.imgbb.com/1/upload'
         files = {'image': open(file_name, 'rb')}
         response = post(url, params=params, files=files)
